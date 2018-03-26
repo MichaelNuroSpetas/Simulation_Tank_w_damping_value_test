@@ -117,7 +117,7 @@ for j=1:tests
     mse(:,j) = (sum(err(j,:)))/length(sipu);
 end
 
-[m, i] = max(mse);
+[m, i] = min(mse);
 fprintf('Best match is: ');
 m
 fprintf('Index number : ');
